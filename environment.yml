@@ -1,0 +1,11 @@
+name: pra_test
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - numpy
+    - scipy
+    - pyroomacoustics==0.10.0
+    - pytest
