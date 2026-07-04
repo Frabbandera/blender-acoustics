@@ -94,18 +94,6 @@ Scene objects must follow these naming conventions:
 - `SRC_*` for acoustic sources;
 - `MAP_*` for receiver mapping areas.
 
-## Runtime Outputs
-
-During execution, the frontend and backend exchange files through the `exchange/` folder:
-
-```text
-exchange/scene.json      # exported scene payload
-exchange/results.json    # structured simulation results
-exchange/results.csv     # flattened tabular results
-```
-
-Generated JSON and CSV files are ignored by Git by default, because they are runtime outputs rather than source files.
-
 ## Validation
 
 The project report compares BlenderAcoustics with Pachyderm Acoustics for a representative test room at 500 Hz using ISM order 10. The comparison reports small differences for clarity-related metrics and a larger SPL discrepancy, consistent with the current bounding-box approximation used in the simulation workflow.
@@ -115,16 +103,6 @@ The full technical report is available in:
 ```text
 docs/blender_acoustics_report.pdf
 ```
-
-## Running Tests
-
-The Python tests cover selected non-Blender components:
-
-```bash
-python -m pytest tests -q
-```
-
-The Blender frontend requires Blender's Python environment and cannot be fully tested with standard Python alone because it depends on `bpy`.
 
 ## Current Limitations
 
