@@ -114,10 +114,6 @@ docs/blender_acoustics_report.pdf
 - The Blender frontend depends on exact scene naming conventions.
 - Validation is limited to a representative reference configuration and should be extended before using the tool for design-critical predictions.
 
-## Relevance
-
-This project is relevant to acoustic simulation workflows because it combines geometry preparation, simulation orchestration, structured data exchange, objective room-acoustic metrics and spatial result visualisation. It also illustrates how an engineering simulation workflow can be connected to an interactive visual environment while keeping the numerical backend inspectable and reproducible.
-
 ## Authors
 
 See [AUTHORS.md](AUTHORS.md).
